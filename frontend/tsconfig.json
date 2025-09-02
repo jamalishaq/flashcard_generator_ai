@@ -1,0 +1,61 @@
+// {
+//   "compilerOptions": {
+//     "allowSyntheticDefaultImports": true,
+//     "target": "ESNext",
+//     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+//     "module": "ESNext",
+//     "moduleResolution": "bundler",
+//     "jsx": "react-jsx",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["src/*"]
+//     }
+//   },
+//   "include": ["src"]
+// }
+
+
+{
+  "compilerOptions": {
+    /* Language and environment */
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "types": ["node"],
+
+    /* React + JSX */
+    "jsx": "react-jsx",
+
+    /* Module resolution */
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": false,
+
+    /* Paths and imports */
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["app/*"],
+      "@features/*": ["features/*"],
+      "@assets/*": ["assets/*"],
+      "@shared/*": ["shared/*"],
+      "@lib/*": ["lib/*"],
+    },
+
+    /* Type checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+
+    /* Output */
+    "isolatedModules": true,
+    "esModuleInterop": true
+  },
+  "include": ["app"],
+  "exclude": ["node_modules", "dist"]
+}
