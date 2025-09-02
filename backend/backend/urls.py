@@ -1,5 +1,5 @@
 """
-URL configuration for flashcard_gen_backend project.
+URL configuration for backend project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -19,6 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('flashcard_gen_api.urls')),
+    path('api/v1/', include('api.urls')),
     path('api-auth/', include('rest_framework.urls')), # to test the browsable API
 ]

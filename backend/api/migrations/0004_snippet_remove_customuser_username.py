@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('flashcard_gen_api', '0003_alter_customuser_username'),
+        ('api', '0003_alter_customuser_username'),
     ]
 
     operations = [
